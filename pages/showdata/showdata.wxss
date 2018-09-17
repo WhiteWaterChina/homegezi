@@ -1,1 +1,46 @@
 /* pages/showdata/showdata.wxss */
+.class-mainbody {
+  display: flex;
+  flex-flow: column;
+}
+.image-reduce {
+  margin: 10rpx 10rpx 10rpx 10rpx;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  position: fixed;
+  right: 20rpx;
+  border: 1px solid #d0d0d0;
+
+  }
+  .image-index {
+    margin: 10rpx 10rpx 10rpx 10rpx;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    position: fixed;
+    left: 40px;
+    border: 1px solid #d0d0d0;
+  }
+  .class-index {
+    text-align: center;
+    width: 40px;
+    height: 30px;
+    border: 1px solid #d0d0d0;
+  }
+  .text-name-line {
+    text-align: center;
+    position: fixed;
+    left: 90px;
+    width: 200px;
+    height: 30px;
+    border: 1px solid #d0d0d0;
+  }
+  .text-position-line {
+    text-align: center;
+    height: 30px;
+    position: fixed;
+    right: 50px;
+    border: 1px solid #d0d0d0;
+
+  }

@@ -4,13 +4,20 @@
   <text>{{idInfo}}</text>
 </view>
 
-<view class='class-mainbody'>
-  <view class='class-line' wx:for="{{dataDetail}}">
-    <view class='class-one-line'>
-      <text class='class-index'>1</text>
-      <image class='image-line' src='/images/1.png'></image>
-      <text class='text-name-line'>指甲刀</text>
-      <text class='text-position-line'>{{id}}</text>
+<view>
+  <view class='title'>
+      <text class='class-index'>序号</text>
+      <text class='image-index'>图片</text>
+      <text class='text-name-line'>名称</text>
+      <text class='text-position-line'>位置</text>
+      <text class='image-reduce'>Del</text>
+  </view>
+  <view class='class-line' wx:for="{{dataDetail}}" wx:key="{{index}}" wx:for-item="item">
+    <view id='{{index}}'>
+      <text class='class-index'>{{index}}</text>
+      <image class='image-index' src='/images/1.png'></image>
+      <text class='text-name-line'>{{item.name}}</text>
+      <text class='text-position-line'>{{positionMin}}</text>
       <image class='image-reduce' src='/images/reduce.png'></image>
     </view>
   </view>
