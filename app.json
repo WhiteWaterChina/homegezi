@@ -4,33 +4,38 @@
     "pages/livingroom/livingroom",
     "pages/firstbedroom/firstbedroom",
     "pages/secondbedroom/secondbedroom",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/search/search",
+    "pages/showdata/showdata"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "HomeGezi",
+    "navigationBarTitleText": "我的格子",
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
-    "position": "top",
-    "color":"#f93177",
+    "position": "bottom",
+    "color":"#666666",
+    "selectedColor": "#06bd04",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页"
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home.png"
       },
       {
         "pagePath": "pages/livingroom/livingroom",
-        "text": "客厅"
+        "text": "客厅",
+        "iconPath": "images/livingroom.png",
+        "selectedIconPath": "images/livingroom.png"
       },
       {
         "pagePath": "pages/firstbedroom/firstbedroom",
-        "text": "主卧"
-      },
-      {
-        "pagePath": "pages/secondbedroom/secondbedroom",
-        "text": "次卧"
+        "text": "主卧",
+        "iconPath": "images/firstbedroom.png",
+        "selectedIconPath": "images/firstbedroom.png"
       }
     ]
   }  

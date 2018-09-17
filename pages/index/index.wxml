@@ -1,13 +1,18 @@
 <!--index.wxml-->
 <view class="container">
   <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+    <text class="userinfo-nickname">Hello {{userInfo.nickName}}!WELCOME TO 我的格子~</text>
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+<!--搜索框-->  
+  <view class='page_row' bindtap="search">
+    <view class="search">
+      <view class="df search_arr">
+        <icon class="searchcion" size='20' type='search'></icon>
+        <input class="" disabled placeholder="请输入关键字"/>
+      </view>
+    </view>
+    <view class='sousuo'>搜索</view>
   </view>
+  
 </view>

@@ -1,0 +1,17 @@
+<!--pages/showdata/showdata.wxml-->
+<view class='class-title'>
+  <text class='class-title-text'>显示{{positionMax}}下的{{positionMin}}的格子</text>
+  <text>{{idInfo}}</text>
+</view>
+
+<view class='class-mainbody'>
+  <view class='class-line' wx:for="{{dataDetail}}">
+    <view class='class-one-line'>
+      <text class='class-index'>1</text>
+      <image class='image-line' src='/images/1.png'></image>
+      <text class='text-name-line'>指甲刀</text>
+      <text class='text-position-line'>{{id}}</text>
+      <image class='image-reduce' src='/images/reduce.png'></image>
+    </view>
+  </view>
+</view>
